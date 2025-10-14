@@ -1,0 +1,26 @@
+import numpy as np
+ #Creatingasamplearray
+ arr=np.array([5,2,9,7,2,8,1,9,4])
+ print("OriginalArray:",arr)
+ #a)Extractnumberslessandgreaterthanaspecifiednumber
+ num=5
+ less_than_num=arr[arr<num]
+ greater_than_num=arr[arr>num]
+ print("\nNumbers lessthan",num, ":", less_than_num)
+ print("Numbersgreaterthan",num, ":",greater_than_num)
+ #b)Findindicesofmaximumandminimumnumbers
+ print("\nIndexofmaximumnumber:",np.argmax(arr))
+ print("Indexofminimumnumber:",np.argmin(arr))
+ #Maximumandminimumvalues
+ print("Maximumvalue:",np.max(arr))
+ print("Minimumvalue:",np.min(arr))
+ #Representationofthearray
+ print("\nArrayrepresentation:",np.array_repr(arr))
+ #Countoccurrencesofaspecificnumber
+ value_to_count=2
+ print(f"Countof{value_to_count} inarray:",np.count_nonzero(arr==value_to_count))
+ #Bincount(fornon-negativeintegers)
+ print("Bincountofarray:",np.bincount(arr))
+ #Uniqueelements
+ unique_elements=np.unique(arr)
+ print("Uniqueelementsinarray:",unique_elements)
